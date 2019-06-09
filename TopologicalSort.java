@@ -12,8 +12,8 @@ static void DFS(int s, List[] G, boolean[] visited, int[] topoSort, int[] index)
 }
 
 static int[] topologicalSort(int s, List[] G){
-	int[] topoSort = new int[G.size());
-	boolean[] visited = new boolean[G.size());
+	int[] topoSort = new int[G.size()];
+	boolean[] visited = new boolean[G.size()];
 	int[] index = {G.v - 1};
 	DFS(s, G, visited, topoSort, index);
 }
